@@ -1,0 +1,26 @@
+! DOPEASSGREEN
+*foreground:        #b6bcc4
+*background:        #0a1010
+
+! Colors 0-15.
+
+*color0:  #0a1010
+*color1:  #4F374A
+*color2:  #085349
+*color3:  #096E4E
+*color4:  #196C62
+*color5:  #298C55
+*color6:  #118D65
+*color7:  #b6bcc4
+*color8:  #7f8389
+*color9:  #4F374A
+*color10:  #085349
+*color11:  #096E4E
+*color12:  #196C62
+*color13:  #298C55
+*color14:  #118D65
+*color15:  #b6bcc4
+
+! Black color that will not be affected by bold highlighting.
+*.color66: #0a1010
+*color66:  #0a1010
