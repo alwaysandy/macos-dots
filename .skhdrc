@@ -95,10 +95,10 @@ shift + cmd - down : yabai -m window --warp south
 # shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
 
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-shift + cmd - n : yabai -m space --create && \
-                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
-                   yabai -m window --space "${index}" && \
-                   yabai -m space --focus "${index}"
+#shift + cmd - n : yabai -m space --create && \
+#                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
+#                   yabai -m window --space "${index}" && \
+#                   yabai -m space --focus "${index}"
 
 # fast focus desktop
 # cmd + alt - x : yabai -m space --focus recent
@@ -147,7 +147,7 @@ cmd + shift - 9 : yabai -m window --space 9
 
 # decrease window size
 # shift + cmd - s : yabai -m window --resize bottom:0:-20
-# shift + cmd - w : yabai -m window --resize top:0:20
+shift + cmd - i : yabai -m window --resize top:0:20
 
 # set insertion point in focused container
 # ctrl + alt - h : yabai -m window --insert west
@@ -172,6 +172,7 @@ alt + shift - space : yabai -m window --toggle float;\
 cmd + shift - w : yabai -m space --destroy
 
 fn + cmd - f : open -a Safari
-cmd - return : open -a alacritty
+cmd - return -> : open -a kitty
 fn + cmd - e : open -a Finder
-fn + cmd - c : open -a Visual\ Studio\ Code
+#fn + cmd - c : open -a Visual\ Studio\ Code
+fn + cmd - m : open -a Messages
